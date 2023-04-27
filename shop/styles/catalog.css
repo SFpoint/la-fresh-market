@@ -1,0 +1,417 @@
+
+
+.customCheck {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  user-select: none;
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.customCheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: #EBEBEB;
+  border-radius: 3px;
+}
+
+.customCheck:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.customCheck input:checked ~ .checkmark {
+  background-color: #E2C282;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.customCheck input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.customCheck .checkmark:after {
+  left: 5px;
+  top: 5px;
+  width: 5px;
+  height: 5px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+
+.filter {
+  top: 20px;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  width: 238px;
+  height: 537.57px;
+  background: #F9F9F9;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 25px 18px;
+  margin-right: 20px;
+}
+.filter h2 {
+  width: 100%;
+  height: 23px;
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  border-bottom: 1px solid #E0E0E0;
+  padding-bottom: 11px;
+}
+.filter .filterPrice {
+  margin-top: 12px;
+}
+.filter .filterPrice h2 {
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+.filter .filterPrice .fromTo {
+  display: flex;
+  flex-direction: row;
+}
+.filter .filterPrice input {
+  box-sizing: border-box;
+  width: 82.97px;
+  height: 33.95px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding-left: 10px;
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+  margin: 10px;
+}
+.filter .type h2 {
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  border-bottom: none;
+}
+.filter .colorChoice h2 {
+  height: fit-content;
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+  border-bottom: none;
+}
+.filter .colorChoice .customCheck input:checked ~ .checkmark {
+  background-color: #000000;
+}
+.filter .colorChoice .customCheck .checkmark {
+  background-color: #000000;
+}
+.filter .colorChoice .customCheck:nth-child(3n) input:checked ~ .checkmark {
+  background-color: #EE0630;
+}
+.filter .colorChoice .customCheck:nth-child(4n) input:checked ~ .checkmark {
+  background-color: #47BC00;
+}
+.filter .colorChoice .customCheck:nth-child(3n) .checkmark {
+  background-color: #EE0630;
+}
+.filter .colorChoice .customCheck:nth-child(4n) .checkmark {
+  background-color: #47BC00;
+}
+.filter .filterFooter {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.filter .filterFooter .filterFooterLink {
+  text-decoration: none;
+  padding: 18px 0px;
+  text-align: center;
+  width: 177.94px;
+  background: #E2C282;
+  border-radius: 10px;
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 10px;
+  color: #FFFFFF;
+  margin-bottom: 14px;
+}
+.filter .filterFooter button {
+  width: 102px;
+  height: 12px;
+  color: #000000;
+  background: none;
+  border: none;
+}
+.filter .filterFooter button a {
+  color: #000000;
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-decoration: underline;
+}
+
+.catalogBlock{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.catalogContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 660px;
+  height: 1400px;
+}
+.cartContainer{
+  max-width: 1500px;
+}
+.catalogContainer .catalog {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 660px;
+  height: 1330px;
+  overflow-y: hidden;
+}
+
+.lowerBannerBlock{
+  margin-top: 70px;
+}
+.catalog h2{
+  height: 80px;
+}
+.catalogContainer .catalogHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.catalogHeader .dropDown{
+  height: fit-content;
+  width: 100%;
+  top: 30px;
+}
+
+.catalogHeader summary::after{
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  top: 12px;
+  right: 15px;
+  position: absolute;
+  width: 2.5px;
+  height: 2.5px;
+  content: "";
+  transform: rotate(45deg);
+}
+.catalogContainer .catalogHeader h2 {
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+}
+.catalogContainer .catalogHeader details {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 175.85px;
+  padding: 5px;
+  background: #F4F4F4;
+  border-radius: 30px;
+}
+.catalogContainer  .catalogHeader details summary {
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.catalogContainer .catalogHeader details summary::marker {
+  color: #F4F4F4;
+}
+.catalogContainer .catalogHeader h3 {
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #000000;
+  opacity: 0.7;
+}
+.catalogContainer .catalogHeader select {
+  width: 49.98px;
+  height: 30px;
+  background: #F4F4F4;
+  border-radius: 30px;
+  padding-left: 11px;
+  cursor: pointer;
+  z-index: 2;
+}
+.catalogContainer .catalogHeader select option {
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 10px;
+  cursor: pointer;
+
+}
+
+.catalogContainer .catalogPagination{
+  background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.catalogPagination .pagination {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+.catalogContainer .pagination a {
+  background: #FFFFFF;
+  border-radius: 6px;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  margin-right: 7px;
+  font-family: "Mardoto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+.catalogContainer .pagination a.active {
+  background-color: #E2C282;
+  color: white;
+}
+.catalogContainer .pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.linksBlock{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.linksContainer a{
+  font-family: 'Mardoto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  color: #000000;
+}
+
+@media (max-width: 1439px){
+
+  .catalogContainer{
+    margin-right: 0px;
+  }
+
+
+}
+
+@media (max-width: 1023px){
+  .filter{
+    display: none;
+  }
+}
+
+@media (max-width: 767px){
+  .catalogBlock{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .catalogContainer{
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 10px;
+  }
+  .catalogPagination{
+    width: 100%;
+  }
+  .catalogContainer .catalog{
+    width: 100%;
+  }
+  .catalogContainer .pagination a{
+    padding:  6px 10px;
+  }
+  .catalogContainer .catalogHeader{
+    flex-wrap: wrap;
+  }
+.catalogContainer .catalogHeader h2{
+  margin-bottom: 10px;
+  font-size: 18px;
+  width: 100%;
+}
+.catalogContainer .catalogHeader details{
+  width: 50%
+  ;
+}
+
+.catalogContainer .catalogHeader h3{
+  line-height: 30px;
+}
+}
+
+
+
+
+
+/*# sourceMappingURL=styles.css.map */

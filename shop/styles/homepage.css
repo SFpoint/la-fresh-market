@@ -1,0 +1,2778 @@
+*{
+    margin: 0 ;
+    padding: 0 ;
+    transition: all 0.5s ;
+
+}
+
+
+@keyframes fadeIn{
+0% {opacity: 0;}
+100% {opacity: 1;}
+}
+
+@keyframes fadeOut{
+    0% {opacity: 1;}
+100% {opacity: 0;}
+}
+
+@keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba(44, 204, 111, 0.4);
+      box-shadow: 0 0 0 0 rgba(44, 204, 111, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
+  }
+
+body{
+    animation: fadeIn 1s;
+}
+details{
+    cursor: pointer;
+}
+details[open] > :last-child {
+    animation: fadeIn 1s;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+footer a:hover{
+    opacity: 0.5;
+}
+.social a:hover{
+    opacity: 0.5;
+}
+  summary {
+    outline: none;
+    /* Hides marker on Chrome */
+    list-style: none;
+  }
+  
+  summary::-webkit-details-marker {
+    /* Hides marker on Safari */
+    display: none;
+  }
+ button{
+    cursor: pointer;
+    border: none;
+ }
+ button:hover{
+    opacity: 0.7;
+ }
+ .itemText button:hover{
+    background-color: #E2C282;
+    color: #FFFFFF;
+ }
+ .dropDown p {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    width: 100%;
+    font-family: "Mardoto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 86.05px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+
+}
+.logo{
+    display: flex;
+    margin-right: 32.59px;
+}
+
+.logo div{
+    width: 48.79px;
+    height: 48.79px;
+    background-color: #F8F8F8;
+    margin-right: 12.21px;
+    border-radius: 10px
+}
+
+.logo h2 {
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.logo h2 >span {
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: rgba(0, 0, 0, 0.4)
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+nav details{
+    z-index: 11;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150.41px;
+    height: 48.79px;
+    background: #E2C282;
+    border-radius: 10px;
+    margin-right: 38px;
+    position: relative;
+}
+  
+  .dropDown {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 165.45px;
+    height: 200.43px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    z-index: 10;
+    justify-content: center;
+
+    
+  }
+  .dropDown a {
+    text-decoration: none;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    width: 100%;
+    font-family: "Mardoto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .dropDown :last-child {
+    border-bottom: none;
+  }
+  .dropDown a:hover{
+    color: #FFFFFF;
+    background-color: #E2C282;
+  }
+  .user .dropDown p:hover{
+    color: #FFFFFF;
+    background-color: #E2C282;
+  }
+  .globe .dropDown p:hover{
+    color: #FFFFFF;
+    background-color: #E2C282;
+  }
+  .dropDown p:hover{
+    color: #FFFFFF;
+    background-color: #E2C282;
+  }
+.icon {
+    width: 14.1px;
+    height: 12px;
+    padding-right: 12px;
+}
+.favourites{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+.favourites:hover svg path{
+    fill: #EE0630;
+}
+.heart{
+    cursor: pointer;
+}
+.heart:hover path{
+    fill: #EE0630;
+}
+.central{
+    width: 7.8px;
+    height: 1px;
+    margin-bottom: 4px;
+    background-color: #000000;
+ }
+
+ .bars {
+    width: 14.1px;
+    height: 1px;
+    margin-bottom: 4px;
+    background-color: #000000;
+ }
+
+.section h2 {
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+  }
+  
+.search {
+    position: relative;
+}
+.search::before{
+    margin-left: 23px;
+        content: '';
+        position: absolute;
+        top: 16px;
+        width: 16px;
+        height: 16px;
+        background: url('../images/icons/search.png') no-repeat;
+        background-size: cover;
+}
+.search input{
+    box-sizing: border-box;
+    background: #F7F7F7;
+    border-radius: 90px;
+    border: none;
+    width: 512.22px;
+    height: 48px;
+    padding-left: 54px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 38px;
+    height: 38px;
+    background-color: #47BC00;
+    margin-right: 6px;
+    margin-left: 25px;
+    animation: pulse 2s infinite;
+}
+
+.Info p:first-child{
+    box-sizing: border-box;
+    padding-top: 3px;
+    text-align: center;
+    background: #F3F3F3;
+    border-radius: 23px;
+    width: 119.29px;
+    height: 18px;
+    font-family: 'Mardoto';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    margin-bottom: 4px;
+}
+.Info p span{
+    font-weight: 700;
+}
+
+.Info a{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.personal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.user{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 24px;
+    margin-right: 48.5px;
+}
+
+.user .dropDown{
+    right: 0px;
+}
+.user::before{
+    position: absolute;
+    right: 24px;
+    left: 54px;
+    bottom: 0px;
+    top: 5px;
+    content: "";
+    width: 1px;
+    height: 23.59px;
+    background-color: #EEEEEE;
+}
+
+
+
+.user summary{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 30px;
+}
+.user .dropDown{
+     height: fit-content;
+}
+.user summary:hover{
+    background-color: #F3F3F3;
+}
+.user .dropDown p {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 12px 20px;
+    width: 100%;
+    font-family: "Mardoto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.globe{
+    position: relative;
+}
+.globe .dropDown{
+    height: fit-content;
+    width: fit-content;
+    border-radius: 10px;
+}
+.globe .dropDown p {
+   cursor: pointer;
+   box-sizing: border-box;
+   padding: 12px 20px;
+   width: 100%;
+   font-family: "Mardoto";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 16px;
+   color: #000000;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.globe summary{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.globe summary:hover{
+    background-color: #F3F3F3;
+}
+.globe::before{
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    top: 15px;
+    left: 30px;
+    position: absolute;
+    width: 2.5px;
+    height: 2.5px;
+    content: "";
+
+    transform: rotate(45deg);
+}
+
+.bannerBlock{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.banner{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 692px;
+    height: 311.58px;
+    border-radius: 30px;
+}
+
+.bannerImg{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    scrollbar-width: none;
+}
+.bannerImg::-webkit-scrollbar {
+    display: none;
+  }
+
+
+.textBox{
+    position: absolute;
+    margin-left: 24px;
+    left: 82px;
+}
+
+.arrowKeyDown{
+    position: absolute;
+    width: 33.48px;
+    height: 33.48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 33.48px;
+    left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrowKeyUp{
+    left: 645px;
+    position: absolute;
+    width: 33.48px;
+    height: 33.48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 33.48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerKeyUp{
+    left: 645px;
+    position: absolute;
+    width: 33.48px;
+    height: 33.48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 33.48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerKeyDown{
+    position: absolute;
+    width: 33.48px;
+    height: 33.48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 33.48px;
+    left: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBox h1{
+    width: 301.03px;
+    height: 78.09px;
+    font-family: 'Mardoto';
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 43px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 26px;
+}
+
+.textBox button{
+    width: 150.41px;
+    height: 48.79px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background-color: #FEF1D7;;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.switch{
+    position: absolute;
+    width: 89.12px;
+    height: 13.98px;
+    left: 290px;
+    top: 275px;
+    background: #FFFFFF;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.switch input{
+    cursor: pointer;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background-color:  #D9D9D9;
+    accent-color: #000000;
+    color: black;
+}
+
+.promo{
+    z-index: 5;
+    margin-left: 18px;
+    height: 311px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.promo img{
+    cursor: pointer;
+}
+.cartCart{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    
+}
+
+.cartBlock{
+    display: flex;
+    justify-content: center;
+}
+.cartContainer{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 1440px;
+}
+.cartContainer h2{
+    width: 266px;
+
+}
+.shoppingCart{
+    border-radius: 10px;
+    padding: 14px;
+    margin-right: 20px;
+    position: relative;
+    background-color: #E2C282;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.shoppingCart p{
+    width: max-content;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+.shoppingCart span{
+    text-align: center;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #47BC00;
+    padding: 2px 4px;
+    height: 9px;
+    top: 20px;
+    left: 25px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 9px;
+
+    color: #FFFFFF;
+}
+.cart{
+    overflow-x: hidden;
+    width: 266px;
+    height: 320px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+}
+.purchase{
+    margin-top: 31px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.purchase:last-child{
+    animation: fadeIn 1s ;
+}
+
+.purchase img {
+    width: 46.31px;
+    height: 46.31px;
+    margin-right: 13px;
+}
+
+.cartPrice h4{
+    width: 88.5px;
+    height: 20px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+}
+
+.cartPrice{
+    margin-right: 20px;
+}
+
+.cartPrice p{
+    margin-top: 5px;
+    font-family: 'Mardoto';
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    color: #EE0630;
+}
+.cartPrice p span{
+    padding-left: 6px;
+    font-family: 'Mardoto';
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 10px;
+    color: #000000;
+}
+
+.amount{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
+.amount p {
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #000000;
+    padding: 10px;
+}
+
+.amount button{
+    width: 25.34px;
+    height: 25.34px;
+    background: #F3F3F3;
+    border-radius: 4px;
+}
+
+.salesBlock{
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.salesPromo{
+    z-index: 5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 895px;
+    align-items: center;
+}
+.salesPromo h2{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000
+}
+
+.salesPromo button{
+    width: 133.9px;
+    height: 31.48px;
+    background: #000000;
+    border-radius: 30px;
+}
+
+.salesPromo button a{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+.newProductPromo button a{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+.hitsPromo button a{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+
+.brandsPromo button a{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+.sales{
+    width: 895px;
+    height: 274.57px;
+    background: #F9F9F9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.salesList{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+
+
+.sales .arrowKeyDown {
+    position: absolute;
+    width: 33.48px;
+    height: 33.48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 33.48px;
+    z-index: 2;
+    top: 120px;
+    left: 2px;
+}
+
+.sales .arrowKeyUp{
+    position: absolute;
+    width: 33.48px;
+    height: 33.48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 33.48px;
+    z-index: 2;
+    top: 120px;
+    left: 855px;
+}
+.salesContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 21px;
+}
+
+.salesItem{
+    position: relative;
+    width: 143px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.salesItem img {
+    width: 142.85px;
+    height: 142.85px;
+}
+
+.salesItem .heart{
+    width: 16px;
+    height: 14.02px;
+    top: 12px;
+    position: absolute;
+    right: 15px;
+}
+.salesItem::before{
+    top: 15px;
+    left: 18px;
+    text-align: center;
+    content: "-40%";
+    position: absolute;
+    width: 21.99px;
+    height: 11.12px;
+    background: #EE0630;
+    border-radius: 18px;
+    font-family: 'Mardoto';
+    font-weight: 500;
+    font-size: 6px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+
+
+
+.itemText{
+    margin-top: 10px;
+}
+
+.itemText h2{
+    width: 106.94px;
+    height: 24px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+}
+
+.itemText p {
+    height: 10px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    color: #EE0630;
+    margin-top: 6px;
+}
+
+.itemText p >span{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 5px;
+}
+
+.itemText button {
+    width: 133.25px;
+    height: 31.65px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Mardoto';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+    border: none;
+    margin-top: 12px;
+}
+
+.order a{
+    text-decoration: none;
+}
+.order Button{
+    width: 266.12px;
+    box-sizing: border-box;
+    background: #E2C282;
+    border-radius: 10px;
+    padding: 12px 30px;
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-around;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+
+.offers{
+    z-index: 5;
+    width: 895px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 53px;
+}
+
+.offers img{
+    cursor: pointer;
+}
+
+.subscribe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+width: 290.4px;
+height: 242.07px;
+background: #F9F9F9;
+border-radius: 30px;
+}
+
+.subscribe h2{
+font-family: 'Mardoto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+color: #000000;
+margin-top: 32px;
+}
+
+.subscribe p {
+width: 150.75px;
+height: 36px;
+font-family: 'Mardoto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+text-align: center;
+color: rgba(0, 0, 0, 0.6);
+margin: 15px;
+}
+
+.subscribe input {
+box-sizing: border-box;
+width: 221.16px;
+height: 36.04px;
+border: 1px solid rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+padding-left: 16px;
+}
+
+.subscribe button {
+width: 221.16px;
+height: 42.45px;
+background: #E2C282;
+border-radius: 10px;
+font-family: 'Mardoto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 10px;
+color: #FFFFFF;
+margin: 15px;
+}
+
+.newProductBlock{
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.newProductPromo{
+    z-index: 5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 895px;
+    align-items: center;
+}
+
+.newProductPromo button{
+    width: 133.9px;
+    height: 31.48px;
+    background: #000000;
+    border-radius: 30px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+.newProductPromo h2{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000
+}
+.newProductContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 21px;
+}
+.newProducts{
+    width: 895px;
+    height: 274.57px;
+    background: #F9F9F9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.newProducts .arrowKeyDown{
+    position: absolute;
+    width: 33.48px;
+    height: 33.48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 33.48px;
+    z-index: 2;
+    top: 120px;
+    left: 2px;
+}
+
+.newProducts .arrowKeyUp {
+    position: absolute;
+    width: 33.48px;
+    height: 33.48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 33.48px;
+    z-index: 2;
+    top: 120px;
+    left: 855px;
+    
+}
+
+
+.newProductList{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+
+.newProduct{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+}
+
+.newItem{
+    position: relative;
+    width: 143px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.newItem img {
+    width: 142.85px;
+    height: 142.85px;
+}
+
+.newItem .heart{
+    width: 16px;
+    height: 14.02px;
+    top: 12px;
+    position: absolute;
+    right: 15px;
+}
+.newItem::before{
+    top: 15px;
+    left: 18px;
+    text-align: center;
+    content: "Նոր%";
+    position: absolute;
+    width: 21.99px;
+    height: 11.12px;
+    background: #47BC00;
+    border-radius: 18px;
+    font-family: 'Mardoto';
+    font-weight: 500;
+    font-size: 6px;
+    line-height: 10px;
+    color: #FFFFFF;
+}
+
+
+.newProductText{
+    margin-top: 10px;
+}
+
+.newProductText h2{
+    width: 106.94px;
+    height: 24px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+}
+
+.newProductText p {
+    height: 10px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    color: #EE0630;
+    margin-top: 6px;
+}
+
+.newProductText p >span{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 5px;
+}
+
+
+
+.lowerBannerBlock{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.lowerBanner{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 895px;
+    height: 190.55px;
+    border-radius: 30px;
+}
+
+
+.newContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 21px;
+}
+
+.newProducts{
+    width: 895px;
+height: 274.57px;
+background: #F9F9F9;
+border-radius: 20px;
+display: flex;
+flex-direction: row;
+overflow-y: hidden;
+}
+
+.lowerBanner{
+    width: 895px;
+    height: 190.55px;
+}
+
+.lowerBanner .textBox{
+    margin-left: 0px;
+    bottom: 33px;
+}
+
+.lowerBanner .switch{
+    top: 170px;
+    left: 400px;
+}
+
+.lowerBanner .bannerKeyUp {
+    left: 850px;
+}
+
+.hitsBlock{
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hitsPromo{
+    z-index: 5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 895px;
+    align-items: center;
+}
+
+.hitsPromo button{
+    width: 133.9px;
+height: 31.48px;
+background: #000000;
+border-radius: 30px;
+font-family: 'Mardoto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 10px;
+color: #FFFFFF;
+}
+
+.hitsPromo h2{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000
+}
+.hitsContainer{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    margin-top: 21px;
+}
+
+.hits{
+    width: 895px;
+    height: 274.57px;
+    background: #F9F9F9;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.hits .arrowKeyDown {
+    position: absolute;
+    width: 33.48px;
+    height: 33.48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 33.48px;
+    z-index: 2;
+    top: 120px;
+    left: 2px;
+  }
+
+  .hits .arrowKeyUp {
+    position: absolute;
+    width: 33.48px;
+    height: 33.48px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 33.48px;
+    z-index: 2;
+    top: 120px;
+    left: 855px;
+  }
+
+  .hitList{
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+  }
+
+  .hit{
+    position: relative;
+    width: 143px;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+.hit::before {
+    top: 15px;
+    left: 18px;
+    text-align: center;
+    content: "Նոր%";
+    position: absolute;
+    width: 21.99px;
+    height: 11.12px;
+    background: #47BC00;
+    border-radius: 18px;
+    font-family: 'Mardoto';
+    font-weight: 500;
+    font-size: 6px;
+    line-height: 10px;
+    color: #FFFFFF;
+  }
+
+  .hit .heart {
+    width: 16px;
+    height: 14.02px;
+    top: 12px;
+    position: absolute;
+    right: 15px;
+  }
+
+
+
+  .hitText{
+    margin-top: 10px;
+  }
+
+  .hitText h2 {
+    width: 106.94px;
+    height: 24px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #000000;
+  }
+
+.hitText p {
+    height: 10px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 10px;
+    color: #EE0630;
+    margin-top: 6px;
+  }
+
+.hitText p > span {
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    padding-left: 5px;
+  }
+
+.hitText input {
+    width: 133.25px;
+    height: 31.65px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Mardoto';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+    border: none;
+    margin-top: 12px;
+  }
+
+.brandsBlock{
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brandsPromo{
+    z-index: 5;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 895px;
+    height: fit-content;
+    align-items: center;
+  }
+
+  .brandsPromo h2{
+        font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000
+  }
+
+.brandsPromo button {
+    width: 133.9px;
+    height: 31.48px;
+    background: #000000;
+    border-radius: 30px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 10px;
+    color: #FFFFFF;
+  }
+
+.brandsContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 21px;
+}
+.brands{
+    width: 895px;
+display: flex;
+flex-direction: row;
+}
+  .brandList{
+    z-index: 5;
+    width: 900px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+    flex-wrap: wrap;
+    margin-top: 39px;
+    scrollbar-width: none;
+  }
+
+  .brandList::-webkit-scrollbar {
+    display: none;
+  }
+
+  .brandList{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.brand{
+    width: 110.99px;
+    height: 61.48px;
+    padding: 13px 34px;
+    border-left: 1px solid #C9C9C9;
+    border-bottom: 1px solid #C9C9C9;
+}
+
+
+.brand:nth-child(2n){
+    border-bottom: none;
+}
+.brand:nth-child(-n + 2){
+    border-left: none;
+}
+
+
+
+footer{
+    background-color: #F4F4F4;;
+    display: flex;
+    justify-content: center;
+    margin-top: 68px;
+    flex-direction: column;
+    align-items: center;
+}
+.footerContainer{
+    max-width: 1200px;
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F4F4F4;;
+}
+
+.footerContainer .logo div{
+    background-color: #E4E4E4;
+}
+
+.footerSection{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+}
+.footerSection h2{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.sectionLinks{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 130px;
+}
+.sectionLinks a {
+    text-decoration: none;
+    padding-top: 12px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.sectionLinks a:nth-child(-n +4){
+    padding-right: 100px;
+}
+
+.footerIcon{
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+}
+
+.footerContainer .contacts h2:first-child{
+ margin-bottom: 12px;
+}
+
+.footerContainer .contact{
+    align-items: center;
+    margin-bottom: 12px;
+}
+.footerContainer .contact h2{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.social svg{
+    padding-right: 17px;
+}
+
+.payMethod{
+    width:276px
+}
+
+.payMethod h2{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    
+}
+.payMethod p{
+    margin-top: 12px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.cards svg{
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.rightsContainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+.rights{
+    width: 1400px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+}
+.reserved{
+    display: flex;
+    flex-direction: row;
+
+}
+.reserved p{
+    padding: 20px 18px;
+}
+.development{
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.development h2{
+    text-align: center;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    padding-right: 2px;
+}
+.development img{
+    width: 25px;
+    height: 13px;
+}
+
+.addsnewItem{
+    width: 133.25px;
+    height: 30.65px;
+    margin-top: 12px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Mardoto';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+}
+.addsnewItem p {
+
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 5px;
+    color: #000000;
+    }
+    .addsnewItem button{
+        padding: 0px;
+        margin: 0px;
+    }
+
+.addssalesItem{
+    width: 133.25px;
+    height: 30.65px;
+    margin-top: 12px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Mardoto';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+}
+
+.addssalesItem p {
+
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 5px;
+    color: #000000;
+    }
+
+    .addssalesItem button{
+        padding: 0px;
+        margin: 0px;
+    }
+
+.addshit{
+    width: 133.25px;
+    height: 30.65px;
+    margin-top: 12px;
+    display: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Mardoto';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+}
+.addshit button{
+    padding: 0px;
+    margin: 0px;
+}
+.addshit p {
+
+font-family: 'Mardoto';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 5px;
+color: #000000;
+}
+
+.registerBlock {
+    z-index: 20;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(45, 45, 45, 0.6);
+    backdrop-filter: blur(21.5px);
+}
+.registerContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 489px;
+    height: 519px;
+    background: #FFFFFF;
+    border-radius: 26px;
+    box-sizing: border-box;
+    padding: 10px 25px;
+}
+
+.registerContainer h2{
+    width: 94%;
+}
+
+.registerContainer button{
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.registerContainer input{
+    background: #FFFFFF;
+    border-radius: 26px;
+    width: 424px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;    
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.registerContainer input:first-child{
+    margin-right: 5px;
+}
+.registerContainer .registerInput{
+    width: 207px;
+}
+.privacyPolicy{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+
+.container {
+    display: block;
+    position: relative;
+    margin-bottom: 12px;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #E2C282;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+    left: 4px;
+    top: 2px;
+    width: 5px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .registerContainer p {
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(40, 40, 40, 0.4);
+  }
+  .registerContainer a{
+    color: #E2C282;
+  }
+
+  .registerContainer .registrBtn{
+    height: 59px;
+    width: 100%;
+    background: #E2C282;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+    .mediaSocial{
+        border-top: 1px solid rgba(0, 0, 0, 0.05) ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .mediaSocial .media{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 90px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .closeWindow{
+    cursor: pointer;
+  }
+
+  .logInBlock {
+    z-index: 20;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(45, 45, 45, 0.6);
+    backdrop-filter: blur(21.5px);
+}
+.logInContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 489px;
+    height: 457px;
+    background: #FFFFFF;
+    border-radius: 26px;
+    box-sizing: border-box;
+    padding: 10px 25px;
+}
+
+.logInContainer h2{
+    width: 94%;
+}
+
+.logInContainer button{
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.logInContainer input{
+    background: #FFFFFF;
+    border-radius: 26px;
+    width: 424px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;    
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.logInContainer .logInBtn{
+    height: 59px;
+    width: 100%;
+    background: #E2C282;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .logInBlock a{
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(40, 40, 40, 0.4);
+  }
+
+  .logInBlock p{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(40, 40, 40, 0.4);
+  }
+
+
+.forgotPasBlock {
+    z-index: 20;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(45, 45, 45, 0.6);
+    backdrop-filter: blur(21.5px);
+}
+.forgotPasContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 489px;
+    height: 236px;
+    background: #FFFFFF;
+    border-radius: 26px;
+    box-sizing: border-box;
+    padding: 10px 25px;
+}
+
+.forgotPasContainer h2{
+    width: 94%;
+}
+
+.forgotPasContainer button{
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.forgotPasContainer input{
+    background: #FFFFFF;
+    border-radius: 26px;
+    width: 424px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;    
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.forgotPasContainer .forgotPasBtn{
+    height: 59px;
+    width: 100%;
+    background: #E2C282;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .forgotPasBlock p{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(40, 40, 40, 0.4);
+  }
+
+  .pasResetBlock {
+    z-index: 20;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(45, 45, 45, 0.6);
+    backdrop-filter: blur(21.5px);
+}
+.pasResetContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 489px;
+    height: 284px;
+    background: #FFFFFF;
+    border-radius: 26px;
+    box-sizing: border-box;
+    padding: 10px 25px;
+}
+
+.pasResetContainer h2{
+    width: 94%;
+}
+
+.pasResetContainer button{
+    width: 22px;
+    height: 22px;
+    font-size: 22px;
+    text-align: center;
+    background-color: #FFFFFF;
+}
+
+.pasResetContainer input{
+    background: #FFFFFF;
+    border-radius: 26px;
+    width: 424px;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;    
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+
+.pasResetContainer .forgotPasBtn{
+    height: 59px;
+    width: 100%;
+    background: #E2C282;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .pasResetBlock p{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+    color: rgba(40, 40, 40, 0.4);
+  }
+
+  .pasResetContainer .pasResetBtn{
+    height: 59px;
+    width: 100%;
+    background: #E2C282;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+
+
+
+  .pasResetPasswordInput{
+    position: relative;
+    width: 100%;
+        height: 45px;
+}
+
+.pasResetPasswordInput input{
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border-right:none ;
+}
+
+.pasResetPasswordInput button{
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: transparent;
+    height: 100%;
+    width: 10%;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    z-index: 5;
+}
+
+.linksBlock{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.linksContainer{
+    width: 895px;
+    z-index: 10;
+}
+.linksContainer a{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+}
+.linksContainer p span{
+    color: #E2C282;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+}
+
+@font-face {
+    font-family: Mardoto;
+    src: url(../fonter.am_mardoto/Mardoto-Regular.ttf);
+}
+
+
+@media (max-width: 1439px) {
+
+    .cartBlock{
+        display: none;
+    }
+    .shoppingCart{
+        margin-right: 10px;
+        padding: 0px;
+        background-color: transparent;
+    }
+    .shoppingCart span{
+        top: 5px;
+        left: 10px;
+    }
+    .phone{
+        margin-left: 10px;
+    }
+    .shoppingCart p{
+        display: none;
+    }
+    .salesContainer{
+        padding-right: 0px;
+    }
+    .salesPromo{
+        padding-right: 0px;
+        width: 895px;
+    }
+    .offers{
+        margin-right: 0px;
+    }
+    .newProductPromo{
+        padding-right: 0px;
+        width: 895px;
+    }
+    .newProductContainer{
+        margin-right: 0px;
+    }
+    .lowerBannerBlock{
+        margin-right: 0px;
+    }
+    .hitsPromo{
+        padding-right: 0px;
+        width: 895px;
+    }
+    .hitsContainer{
+        margin-right: 0px;
+    }
+    .user{
+        margin: 0px;
+    }
+    .contact{
+        margin-right: 15px;
+    }
+    .search input{
+        width: 400px;
+    }
+    .section{
+        margin-right: 15px;
+    }
+    .logo{
+        margin-right: 20px;
+    }
+
+    .bannerBlock{
+        flex-wrap: wrap;
+    }
+
+    .promo img{
+        margin-right: 5%;
+    }
+    .brandsPromo{
+        padding-right: 0px;
+        width: 895px;
+
+    }
+    .brandsContainer{
+        margin-right: 0px;
+    }
+    .footerContainer{
+        width: 100%;
+    }
+    .development{
+        width: 25%;
+    }
+
+}
+
+@media(max-width: 1023px){
+    header{
+        flex-wrap: wrap;
+    }
+    header nav{
+        order: 4;
+    }
+.logo{
+    width: 50%;
+}
+.promo{
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+    order: 3;
+    flex-direction: row;
+   height: fit-content;
+}
+.section{
+    width: fit-content;
+}
+.section .icon{
+    padding: 0px 20px;
+}
+.section h2{
+    display: none;
+}
+
+.search input {
+    width: 640px;
+}
+.cartBlock{
+    display: none;
+}
+
+
+.salesPromo{
+    width: 700px;
+}
+
+.newProductPromo{
+    width: 700px;
+}
+
+.hitsPromo{
+    padding-right: 0px;
+    width: 700px;
+}
+.sales{
+    width: 700px;
+}
+.sales .arrowKeyUp{
+    left: 670px;
+}
+.offers{
+    width: 700px;
+}
+
+.offers img{
+    width: 228.93px;
+}
+
+.offers .subscribe{
+    width: 228.93px;
+    height: fit-content;
+}
+
+.subscribe button{
+    width: 85%;
+}
+.subscribe input{
+    width: 85%;
+}
+.newProducts{
+    width: 700px;
+}
+.newProducts .arrowKeyUp{
+    left: 670px;
+}
+
+.hits{
+    width: 700px;
+}
+
+.hits .arrowKeyUp{
+    left: 670px;
+}
+.brandsPromo{
+    width: 700px;
+}
+.brandList {
+    width: 700px;
+}
+.lowerBanner{
+    width: 700px;
+}
+
+.lowerBanner img{
+    width: 700px;
+}
+
+.lowerBanner .switch{
+    top: 150px;
+    left: 300px;
+}
+
+.footerContainer{
+    flex-wrap: wrap;
+    padding-left: 30px;
+    box-sizing: border-box;
+}
+.footerContainer .logo{
+    width: 100%;
+
+}
+
+.footerContainer .contacts{
+    margin-top: 40px;
+    order: 4;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.footerContainer .contacts h2{
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.footerContainer .contacts h2:first-child{
+    margin-bottom: 12px;
+}
+.footerContainer .contacts .contact{
+    margin-bottom: 0px;
+}
+.rights{
+    width: 100%;
+}
+.rights .reserved p{
+    padding: 20px 15px 0px 0px;
+}
+.development{
+    width: fit-content;
+}
+
+.linksBlock {
+    margin-left: 20px;
+}
+
+.lowerBanner .bannerKeyUp{
+    left: 655px;
+}
+
+}
+
+@media(max-width: 767px){
+    .shoppingCart{
+        margin: 0;
+    }
+    
+    .logo {
+        margin-right: 0px;
+    }
+
+    .logo div{
+        margin-right: 8px;
+    }
+
+    .contact {
+        margin-right: 0px;
+    }
+
+    .search input{
+        width: 100%;
+    }
+
+    header{
+        margin: 10px 10px 40px 10px;
+        height: fit-content;
+        justify-content: space-around;
+    }
+
+    .user{
+        display: none;
+    }
+    .favourites{
+        display: none;
+    }
+
+    header .logo{
+        width: fit-content;
+    }
+    .banner{
+        margin: 0 10px 15px 10px;
+        width: 100%;
+        height: fit-content;
+    }
+    .bannerImg img{
+        width: 100%;
+    }
+    .banner .textBox{
+        left: 28px;
+        top: 30px;
+    }
+    .banner .textBox h1{
+        width: 142px;
+        font-size: 16px;
+        line-height: 20px;
+        height: fit-content;
+    }
+    .banner .textBox button{
+        width: 71.17px;
+        height: 23.08px;
+        font-size: 6.62429px;
+        line-height: 8px;
+    }
+    .banner .switch{
+        top: 87%;
+        left: 35%;
+    }
+    .banner .bannerKeyUp{
+        left: 86%
+    }
+
+    .promo{
+        overflow-y: hidden;
+        margin: 0 10px;
+    }
+    .salesBlock{
+        padding: 0px 15px;
+    }
+
+    .salesPromo{
+        width: 100%;
+    }
+    .salesContainer{
+        width: 100%;
+    }
+    .sales{
+        width: 100%;
+    }
+
+    .salesItem {
+        margin-left: 10px;
+    }
+    .salesItem img{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .itemText button{
+        width: 100%;
+    }
+
+    .itemText h2{
+        width: 130px;
+    }
+    .sales .arrowKeyUp{
+        left: 87%;
+    }
+
+    .addssalesItem{
+        width: 100%;
+    }
+    .newProductBlock{
+        padding: 0px 15px;
+    }
+    .newProductPromo{
+        width: 100%;
+    }
+    
+
+
+    .newProductContainer{
+        width: 100%;
+    }
+    .newProducts{
+        width: 100%;
+    }
+
+    .newItem {
+        margin-left: 10px;
+    }
+    .newItem img{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .itemText button{
+        width: 100%;
+    }
+
+    .itemText h2{
+        width: 130px;
+    }
+    .newProducts .arrowKeyUp{
+        left: 87%;
+    }
+    .offers{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 0px 15px;
+        box-sizing: border-box;
+    }
+    .offers img{
+        width: 47%;
+    }
+    .offers .subscribe{
+        margin-top: 15px;
+        width: 100%;
+    }
+
+      .lowerBanner{
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 10px;
+    }
+    .lowerBanner .textBox{
+        left: 28px;
+        bottom: 65px;
+    }
+    .lowerBanner .textBox button{
+        width: 71.17px;
+        height: 23.08px;
+        font-size: 6.62429px;
+        line-height: 8px;
+    }
+    .lowerBanner .bannerKeyDown{
+        display: none;
+    }
+    .lowerBanner .bannerKeyUp{
+        display: none;
+    }
+    .lowerBanner .switch{
+        left: 35%;
+        top: 57%
+    }
+    .hitsBlock{
+        padding: 0px 15px;
+    }
+    .hitPromo{
+        width: 100%;
+    }
+    .hits{
+        width: 100%;
+    }
+    .hits .arrowKeyUp{
+        left: 87%;
+    }
+
+    .hit {
+        margin-left: 10px;
+    }
+    .hit img{
+        width: 100%;
+        height: fit-content;
+    }
+
+
+    .hitsContainer{
+        width: 100%;
+    }
+    .hitsPromo{
+        width: 100%;
+    }
+
+    .brandsBlock{
+        padding: 0px 15px;
+    }
+    .brandsPromo{
+        width: 100%;
+    }
+
+    .brandsContainer{
+        width: 100%;
+    }
+    .brandList{
+        width: 100%;
+    }
+
+    .rightsContainer{
+        flex-wrap: wrap;
+    }
+    .rightsContainer .rights{
+        flex-wrap: wrap;
+    }
+    .sectionLinks a:nth-child(-n +4) {
+        padding-right: 0px;
+    }
+    .footerContainer{
+        padding-left: 15px ;
+    }
+    .footerContainer .contacts{
+        justify-content: space-between;
+    }
+
+
+    .footerContainer .contacts h2:first-child {
+        font-size: 25px;
+    }
+
+    .footerContainer .contacts h2{
+        font-size: 12px;
+    }
+    .development {
+        padding: 15px 0px;
+    }
+    .rights{
+        justify-content: flex-start;
+        padding-left: 15px;
+        height: fit-content;
+    }
+    .reserved{
+        flex-direction: column;
+    }
+
+    .registerContainer{
+        width: 100%;
+        height: fit-content;
+        justify-content: space-between;
+    }
+    .registerContainer h2{
+        width: fit-content;
+        margin-bottom: 12px;
+    }
+
+    .registerContainer input{
+        margin-bottom: 10px;
+    }
+    .registerContainer .registerInput{
+        width: 94%;
+    }
+    .registerContainer p{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .mediaSocial{
+        padding-top: 15px;
+    }
+    .logInContainer{
+        width: 94%;
+        justify-content: space-between;
+    }
+    .logInContainer h2{
+        width: fit-content;
+    }
+    .logInContainer p{
+        width: 100%;
+        text-align: center;
+    }
+    .forgotPasContainer{
+        width: 94%;
+        justify-content: space-between;
+    }
+    .forgotPasContainer h2{
+        font-family: 'Mardoto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        width: fit-content;
+    }
+    .forgotPasBlock p{
+        display: none;
+    }
+
+    .pasResetContainer{
+        width: 94%;
+        justify-content: space-between;
+    }
+    .pasResetContainer h2{
+        font-family: 'Mardoto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        width: fit-content;
+    }
+
+    .search{
+        width: 100%;
+    }
+    header nav{
+        width: 100%;
+    }
+    header nav form{
+        width: 100%;
+    }
+}
+@media (max-width: 374px) {
+    .logo svg{
+        width: 60px
+    }
+    
+}
+
+.itemText .plus{
+    font-size: 15px;
+}
+.itemText .minus{
+    font-size: 20px;
+}
+
+.itemText .plus:hover{
+    color: #E2C282;
+    background-color: transparent;
+}
+.itemText .minus:hover{
+    color: #E2C282;
+    background-color: transparent;
+}
+
+.salesList::-webkit-scrollbar{
+    display: none;
+}
+.hitList::-webkit-scrollbar{
+    display: none;
+}
+.newProductList::-webkit-scrollbar{
+    display: none;
+}

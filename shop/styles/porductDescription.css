@@ -1,0 +1,438 @@
+.customCheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    user-select: none;
+    font-family: "Mardoto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+  }
+  
+  .customCheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: #EBEBEB;
+    border-radius: 3px;
+  }
+  
+  .customCheck:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .customCheck input:checked ~ .checkmark {
+    background-color: #E2C282;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .customCheck input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .customCheck .checkmark:after {
+    left: 5px;
+    top: 5px;
+    width: 5px;
+    height: 5px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+
+.productDescriptionBlock{
+    display: flex;
+    justify-content: center;
+}
+
+.productDescriptionContainer{
+display: flex;
+flex-wrap: wrap;
+}
+
+.productDescription {
+    display: flex;
+    flex-wrap: wrap;
+    width: 895px;
+}
+.productDescription img{
+    width: 543.33px;
+    height: 565.4px;
+    margin-right: 15px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    width: 335.5px;
+    height: 565.4px;
+    background: #F9F9F9;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 25px 18px;
+    margin-bottom: 25px;
+  }
+  .filter h2 {
+    height: 23px;
+    font-family: "Mardoto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    padding-bottom: 11px;
+  }
+  .filter .filterPrice {
+    margin-top: 12px;
+  }
+  .filter .filterPrice h2 {
+    font-family: "Mardoto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    border-bottom: none;
+    padding-bottom: 0px;
+  }
+  .filter .filterPrice .fromTo {
+    display: flex;
+    flex-direction: row;
+  }
+  .filter .filterPrice input {
+    box-sizing: border-box;
+    width: 82.97px;
+    height: 33.95px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding-left: 10px;
+    font-family: "Mardoto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin: 10px;
+  }
+
+  .filter .colorChoice .customCheck input:checked ~ .checkmark {
+    background-color: #000000;
+  }
+  .filter .colorChoice .customCheck:nth-child(3n) input:checked ~ .checkmark {
+    background-color: #EE0630;
+  }
+  .filter .colorChoice .customCheck:nth-child(4n) input:checked ~ .checkmark {
+    background-color: #47BC00;
+  }
+  .filter .colorChoice .customCheck .checkmark {
+    background-color: #000000;
+  }
+  .filter .colorChoice .customCheck:nth-child(3n) .checkmark {
+    background-color: #EE0630;
+  }
+  .filter .colorChoice .customCheck:nth-child(4n) .checkmark {
+    background-color: #47BC00;
+  }
+.filter .filterFooter h2{
+  padding: 0px;
+}
+
+  .itemDescription{
+    background: #F9F9F9;
+    border-radius: 20px;
+    height: 204.93px;  
+    padding: 28px 45px; 
+    box-sizing: border-box;
+  }
+
+  .itemDescription h2{
+    margin-bottom: 22px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+  }
+  .itemDescription h2 span{
+    margin-left: 20px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(0, 0, 0, 0.4);  
+}
+
+.itemDescription p{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.lowerBannerBlock{
+    margin-right: 0px;
+}
+
+.scrolledImg{
+  width: 895px;
+  height: 195px;
+  background: url('../images/Group 5779(1).png');
+}
+
+
+.hitsContainer{
+  margin-right: 0px;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+
+.title h2{
+  width: 80%;
+}
+.title img{
+  width: 20.55px;
+  height: 18.01px;
+}
+
+.code {
+  padding: 17px 0px 17px 0px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+
+}
+
+.code h2{
+  color: rgba(0, 0, 0, 0.6);
+  padding: 0px;
+}
+
+.code h2 span{
+  color: #000000
+}
+
+
+.colorChoice{
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  padding-top: 12px;
+  display: flex;
+}
+.colorChoice h2{
+  padding-right: 10px;
+  color: rgba(0, 0, 0, 0.6);
+
+}
+
+.amount{
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+  padding: 12px 0px 12px 0px;
+  justify-content: flex-start;
+}
+
+.amount h2{
+  color: rgba(0, 0, 0, 0.6);
+  padding-right: 20px;
+  padding-bottom: 0px;
+}
+.price{
+  padding: 15px;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.priceBox{
+  display: flex;
+
+}
+.priceBox h2{
+  width: fit-content;
+  font-family: 'Mardoto';
+font-style: normal;
+font-weight: 500;
+font-size: 19.921px;
+line-height: 20px;
+color: #EE0630;
+margin-right: 12px;
+}
+
+.priceBox h2::before{
+  margin-right: 27px;
+  padding: 1px 7px;
+  background: #EE0630;
+  border-radius: 36px;
+  content: "40%";
+  font-family: 'Mardoto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.priceBox span{
+text-decoration: line-through #EE0630;
+font-family: 'Mardoto';
+font-style: normal;
+font-weight: 400;
+font-size: 15.9368px;
+line-height: 20px;
+color: rgba(0, 0, 0, 0.6);
+}
+
+.filterFooter{
+  padding-top: 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filterFooter button{
+  height: 42.54px;
+  width: 45%;
+  background: #E2C282;
+  border-radius: 10px;
+  color: #FFFFFF;
+
+}
+.filterFooter button:last-of-type{
+  margin-right: 5%;
+  background: #EBEBEB;
+  color: #000000;
+}
+
+.filterFooter a{
+font-family: 'Mardoto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #000000;
+}
+
+@media (max-width: 1023px){
+  .productDescription{
+    width: 100%;
+    justify-content: center;
+    margin: 30px;
+  }
+  .productDescription .filter{
+    width: 100%;
+  }
+  .colorChoice h2{
+    width: 90%;
+  }
+  .amount{
+    text-align: start;
+    padding-right: 15px;
+  }
+  .amount h2{
+    width: 90%;
+  }
+  .price {
+    display: flex;
+    justify-content: space-between;
+  }
+  .filterFooter{
+    width: 50%;
+  }
+
+}
+@media (max-width: 767px){
+  .productDescription{
+    margin: 30px 10px;
+  }
+  .productDescription img{
+    width: 100%;
+    height: fit-content;
+  }
+  .productDescriptionContainer {
+    margin: 0px 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .filter{
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  .title img{
+    width: 20.55px;
+    height: 18.01px;
+  }
+
+  .itemDescription{
+    height: fit-content;
+    padding: 28px 15px;
+  }
+  .priceBox h2{
+    font-size: 18px;
+  }
+  .priceBox h2::before{
+    margin-right: 16px;
+  }
+  .priceBox span{
+    font-size: 14px;
+  }
+  .price{
+    padding: 15px 0px;
+    align-items: center;
+  }
+
+  .filter h2{
+    height: fit-content;
+  }
+  .filterFooter{
+    width: 100%;
+  }
+
+  .filterFooter button{
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .filterFooter button:last-of-type{
+    margin-right: 0px;
+  }
+
+  .filterFooter h2{
+    padding-bottom: 15px;
+    font-size: 16px;
+  }
+  .filterFooter p{
+    font-size: 12px;
+    padding-bottom: 15px;
+  }
+}
+
+.hitsPromo{
+  width: 895px;
+  padding-right: 0px;
+}

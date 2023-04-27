@@ -1,0 +1,735 @@
+.linksBlock{
+    display: flex;
+    justify-content: center;
+}
+.linksContainer{
+    width: 895px;
+}
+.linksContainer a{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    color: #000000;
+}
+
+.cartBlock{
+    display: flex;
+    justify-content: center;
+}
+.cartContainer{
+    width: 895px;
+    position: static;
+}
+.cartIsEmpty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px
+}
+.delete{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+.delete:hover{
+  background-color: #E2C282;
+  padding: 5px;
+  border-radius: 50%;
+}
+.delete:hover path{
+  fill: #FFFFFF;
+  fill-opacity: 1;
+}
+.basket {
+    
+    width: 895px;
+    display: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.purchases{
+    height: 350px;
+    width: 583px;
+    overflow-x: hidden;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+}
+
+.purchases::-webkit-scrollbar {
+    display: none;
+}
+
+.purchase{
+  position: relative;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.purchase a{
+    position: relative;
+}
+
+.purchase a::before{
+    
+    z-index: 2;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #FFFFFF;
+    top: -2px;
+    left: -10px;
+    position: absolute;
+    padding: 1px 8px;
+    content: "-40%";
+    background-color: #EE0630;
+    border-radius: 36px;
+}
+
+.purchase img{
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.cartPrice{
+    width: 30%;
+}
+
+.cartPrice h3{
+    width: 100%;
+    height: 50%;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.cartPrice p{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #EE0630;
+}
+
+.cartPrice p span{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: line-through #EE0630;
+}
+
+.purchase .heart{
+    width: 16px;
+    height: 14.02px;
+}
+
+.calcAmount{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F9F9F9;
+    border-radius: 30px;
+    width: 286.35px;
+    height: 300.53px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.calcAmount h2{
+    margin: 15px 0px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 15px;
+    color: #000000;
+}
+.calc{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.calc div{
+    padding-bottom: 14px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.calc div p{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.calc div p:last-child{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.discount p:last-child{
+    color: #EE0630;
+}
+
+.total{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.total h2{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.confirm{
+    width: 232.73px;
+    height: 45.52px;
+    background: #E2C282;
+    border-radius: 10px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.paymentInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F6F6F6;
+    border-radius: 30px;
+    width: 583.47px;
+    height: 826.24px;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.recepient{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 541.14px;
+    height: 291.73px;
+    background: #FFFFFF;
+    border-radius: 16px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.recepient h2{
+    width: 100%;
+}
+
+.recepient input{
+    padding-left: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 45px;   
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.recepient input:nth-child(-n + 3){
+    width: 48%;
+}
+
+.recepient button{
+    width: 143.91px;
+    height: 40.11px;
+    background: #E2C282;
+    border-radius: 10px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.address{
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+    width: 541.14px;
+    height: 253.95px;
+    background: #FFFFFF;
+    border-radius: 16px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+  .basket form h2{
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 15px;
+  }
+
+  .map{
+    display: none;
+    margin-top: 15px;
+  }
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34.38px;
+    height: 18.33px;
+    left: 0px;
+    top: 0px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    width: 15.49px;
+    height: 15.91px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #E2C282;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(16px);
+    -ms-transform: translateX(16px);
+    transform: translateX(16px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+  .address button{
+    margin-left: 45%;
+    background: #E2C282;
+    border-radius: 10px;    
+    width: 124.74px;
+    height: 40.11px;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+  }
+
+  .address input{
+    box-sizing: border-box;
+    padding-left: 20px;
+    width: 48%;
+    height: 45px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  .paymentType{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 541.14px;
+    height: 204.13px;
+    background: #FFFFFF;
+    border-radius: 16px;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .paymentType h2{
+    width: 100%;
+  }
+
+  .paymentType div{
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background: #FFFFFF;
+    border: 1.76803px solid #E5E5EE;
+    border-radius: 28.9607px;
+    width: 241.39px;
+    height: 121.09px;
+    background-image: url('../images/image 72.png');
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .paymentType div:last-of-type{
+    background-image: url('../images/image 72 (1).png');
+
+  }
+
+.paymentType p{
+    padding-bottom: 17px;
+    padding-left: 32px;
+}
+  .container {
+    align-self: flex-start;
+    justify-self: flex-start;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 21px;
+    left: 26px;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #ccc;;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: -1px;
+    left: -1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: #E2C282;
+    }
+
+    .confirmBlock{
+        z-index: 20;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(45, 45, 45, 0.6);
+        backdrop-filter: blur(21.5px);
+    }
+
+    .confirmContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 529px;
+        height: 631.35px;
+        background: #FFFFFF;
+        border-radius: 26px;
+        box-sizing: border-box;
+        padding: 25px;
+    }
+
+
+    .confirmContainer  button{
+        width: 22px;
+        height: 22px;
+        font-size: 22px;
+        text-align: center;
+        background-color: #FFFFFF;
+    }
+
+    .confirmContainer h2{
+    width: 94%;
+    font-family: 'Mardoto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20.6297px;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: #282828;
+    }
+
+    .confirmContainer input{
+        width: 100%;
+        height: 45px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding-left: 20px;
+        box-sizing: border-box;
+    }
+
+    .confirmContainer input:nth-child(-n + 4){
+        width: 48%;
+    }
+
+    .confirmContainer .paymentType{
+        padding: 0px;
+        height: fit-content;
+        width: 100%;
+    }
+    .confirmContainer .paymentType div{
+        Width: 218.88px;
+        Height: 109.8px;
+    }
+
+.confirmContainer .confirmBtn{
+width: 100%;
+height: 69.5px;
+background: #E2C282;
+border-radius: 10px;
+font-family: 'Mardoto';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 21px;
+color: #FFFFFF;
+}
+
+@media (max-width: 1023px){
+  .cartContainer:first-child{
+    margin-left: 20px;
+  }
+  .basket{
+    width: 100%;
+  }
+  .purchases {
+    width: 100%;
+  }
+  .paymentInfo{
+    width: 100%;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  .paymentInfo form{
+    width: 90%;
+  }
+  .calcAmount{
+    order: 3;
+    width: 95%;
+  }
+
+.calcAmount h2:first-child{
+  width: 100%;
+}
+.calcAmount .total h2{
+width: fit-content;
+}
+
+}
+@media (max-width: 767px){
+  .cartBlock {
+    width: 100%;
+  }
+
+  .cartContainer{
+    margin: 0 10px;
+  }
+
+  .amount{
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+  }
+  .purchase{
+    position: relative;
+  }
+  .cartPrice{
+    width: 90%;
+    margin-right: 0px;
+  }
+  .cartPrice p{
+    display: flex;
+    justify-content: flex-end;
+  }
+  .purchases {
+    width: 100%;
+  margin: 0 10px 15px 10px;}
+.purchase .heart {
+  align-self: baseline;
+}
+.purchase a::before{
+  left: 0px;
+}
+
+.paymentInfo{
+  padding-bottom: 15px;
+  margin-right: 0px;
+  height: fit-content;
+  padding-top: 15px;
+}
+.recepient input{
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.cartContainer:first-child {
+  margin: 0px 10px;
+}
+
+.recepient input:nth-child(-n + 3){
+  width: 100%;
+}
+
+.paymentInfo form{
+  height: fit-content;
+}
+.cartPrice h3{
+  font-size: 16px;
+}
+.recepient button{
+  width: 100%;
+}
+.recepient h2{
+  padding-bottom: 10px;
+}
+
+.address button{
+  margin-left: 5%;
+}
+
+.address input{
+  width: 100%;
+  margin-top: 12px;
+}
+
+.paymentType{
+  justify-content: center;
+}
+
+.paymentType div{
+  margin-bottom: 10px;
+}
+
+.paymentType h2{
+  padding-bottom: 15px;
+}
+.calcAmount {
+  width: 100%;
+}
+
+.confirmContainer{
+  width: 94%;
+  justify-content: space-between;
+  height: fit-content;
+  padding-bottom: 12px;
+}
+.confirmContainer h2{
+  width: fit-content;
+  margin-bottom: 12px;
+}
+.confirmContainer input:nth-child(-n + 4){
+  width: 100%;
+
+}
+
+.confirmContainer input{
+  margin-bottom: 12px;
+}
+}
+
+.payPal{
+  cursor: pointer;
+}
+
+.stripe{
+  cursor: pointer;
+}
